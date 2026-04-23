@@ -11,14 +11,16 @@ body {
     max-width: 900px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #f5f5f5;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
 }
 
 .navbar {
-    background-color: #333;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 30px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 .navbar a {
@@ -26,15 +28,16 @@ body {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
     font-size: 16px;
-    transition: background-color 0.3s;
+    transition: all 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
 }
 
 .anchor {
@@ -45,18 +48,20 @@ body {
 }
 
 .profile {
-    background-color: white;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    padding: 50px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
     margin-bottom: 30px;
     text-align: center;
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .profile h1 {
     color: #2c3e50;
     margin-bottom: 15px;
     font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
 }
 
 .profile p {
@@ -65,10 +70,11 @@ body {
 }
 
 h1 {
-    color: #2c3e50;
+    color: white;
     margin: 30px 0 15px 0;
     padding-bottom: 10px;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 3px solid rgba(255,255,255,0.5);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
 }
 
 p {
@@ -91,18 +97,24 @@ li {
 }
 
 .section-content {
-    background-color: white;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
     margin-bottom: 30px;
+    border: 1px solid rgba(255,255,255,0.2);
+    transition: transform 0.3s;
+}
+
+.section-content:hover {
+    transform: translateY(-5px);
 }
 
 .section-content h2 {
     color: #2c3e50;
     margin: 25px 0 15px 0;
     padding-bottom: 8px;
-    border-bottom: 1px solid #3498db;
+    border-bottom: 2px solid #3498db;
     font-size: 1.5em;
 }
 
@@ -127,17 +139,115 @@ li {
     font-size: 0.95em;
     margin-bottom: 15px;
     font-style: italic;
+    background: #ecf0f1;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
 }
 
 .subtitle {
     color: #666;
     font-size: 1.1em;
     margin-top: 10px;
+    font-style: italic;
+}
+
+/* 理事会样式 */
+.council-box {
+    background: linear-gradient(135deg, #f0f7ff 0%, #e8f4f8 100%);
+    border-left: 5px solid #3498db;
+}
+
+.council-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.council-item {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+}
+
+.council-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.council-title {
+    display: block;
+    color: #7f8c8d;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.council-name {
+    display: block;
+    color: #2c3e50;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* 友情链接样式 */
+.links-box {
+    background: linear-gradient(135deg, #fff8f0 0%, #f0f8ff 100%);
+    border-left: 5px solid #e74c3c;
+}
+
+.links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.links-grid a {
+    display: block;
+    padding: 10px 15px;
+    background: white;
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s;
+    border: 1px solid #ecf0f1;
+}
+
+.links-grid a:hover {
+    background: #3498db;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
 }
 
 .footer {
     text-align: center;
-    color: #666;
+    color: rgba(255,255,255,0.8);
     font-size: 0.9em;
     margin-top: 40px;
+    padding: 20px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+    
+    .profile h1 {
+        font-size: 1.8em;
+    }
+    
+    .council-grid {
+        grid-template-columns: 1fr;
+    }
 }
