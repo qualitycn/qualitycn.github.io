@@ -5,76 +5,75 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    line-height: 1.6;
+    font-family: "Microsoft YaHei", "SimHei", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.8;
     color: #333;
-    max-width: 900px;
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 0;
+    background: #f5f5f5;
     min-height: 100vh;
 }
 
 .navbar {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: #1a3a5c;
     overflow: hidden;
-    border-radius: 10px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-bottom: 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: #fff;
     text-align: center;
-    padding: 14px 20px;
+    padding: 14px 24px;
     text-decoration: none;
-    font-size: 16px;
-    transition: all 0.3s;
+    font-size: 15px;
+    transition: background-color 0.3s;
+    border-right: 1px solid rgba(255,255,255,0.1);
 }
 
 .navbar a:hover {
-    background-color: #3498db;
+    background-color: #2c5282;
     color: white;
-    transform: translateY(-2px);
 }
 
 .anchor {
     display: block;
     position: relative;
-    top: -70px;
+    top: -50px;
     visibility: hidden;
 }
 
 .profile {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-    padding: 50px 40px;
-    border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-    margin-bottom: 30px;
+    background: linear-gradient(135deg, #1a3a5c 0%, #2c5282 100%);
+    padding: 60px 40px;
+    margin-bottom: 0;
     text-align: center;
-    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
 }
 
 .profile h1 {
-    color: #2c3e50;
-    margin-bottom: 15px;
-    font-size: 2.5em;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    color: white;
+    margin-bottom: 10px;
+    font-size: 2.2em;
+    font-weight: normal;
+    letter-spacing: 2px;
 }
 
 .profile p {
-    color: #666;
-    font-size: 1.2em;
+    color: rgba(255,255,255,0.9);
+    font-size: 1.1em;
 }
 
 h1 {
-    color: white;
-    margin: 30px 0 15px 0;
+    color: #1a3a5c;
+    margin: 40px 20px 20px 20px;
     padding-bottom: 10px;
-    border-bottom: 3px solid rgba(255,255,255,0.5);
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+    border-bottom: 2px solid #1a3a5c;
+    font-size: 1.6em;
+    font-weight: normal;
 }
 
 p {
@@ -83,7 +82,7 @@ p {
 }
 
 ul {
-    margin-left: 20px;
+    margin-left: 25px;
     margin-bottom: 15px;
 }
 
@@ -92,36 +91,32 @@ li {
 }
 
 #lastModified {
-    color: #666;
-    font-size: 0.9em;
+    color: #999;
+    font-size: 0.85em;
 }
 
 .section-content {
-    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    background: white;
     padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
-    margin-bottom: 30px;
-    border: 1px solid rgba(255,255,255,0.2);
-    transition: transform 0.3s;
-}
-
-.section-content:hover {
-    transform: translateY(-5px);
+    margin: 20px;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
 }
 
 .section-content h2 {
-    color: #2c3e50;
+    color: #1a3a5c;
     margin: 25px 0 15px 0;
     padding-bottom: 8px;
-    border-bottom: 2px solid #3498db;
-    font-size: 1.5em;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.3em;
+    font-weight: normal;
 }
 
 .section-content h3 {
-    color: #34495e;
+    color: #444;
     margin: 20px 0 10px 0;
-    font-size: 1.2em;
+    font-size: 1.1em;
+    font-weight: normal;
 }
 
 .section-content ul {
@@ -135,13 +130,11 @@ li {
 }
 
 .news-date {
-    color: #7f8c8d;
-    font-size: 0.95em;
+    color: #666;
+    font-size: 0.9em;
     margin-bottom: 15px;
-    font-style: italic;
-    background: #ecf0f1;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 3px 0;
+    border-bottom: 1px dashed #ddd;
     display: inline-block;
 }
 
@@ -149,32 +142,30 @@ li {
     color: #666;
     font-size: 1.1em;
     margin-top: 10px;
-    font-style: italic;
 }
 
 /* 理事会折叠样式 */
 .council-details {
     margin-top: 25px;
-    border: 1px solid #bdc3c7;
-    border-radius: 10px;
+    border: 1px solid #ddd;
     overflow: hidden;
-    background: #f8f9fa;
+    background: white;
 }
 
 .council-details summary {
-    padding: 15px 20px;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #2c3e50;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    color: #1a3a5c;
     cursor: pointer;
-    background: linear-gradient(135deg, #ecf0f1 0%, #d5dbdb 100%);
+    background: #f8f9fa;
     list-style: none;
     position: relative;
     transition: all 0.3s;
+    border-bottom: 1px solid #eee;
 }
 
 .council-details summary:hover {
-    background: linear-gradient(135deg, #d5dbdb 0%, #bdc3c7 100%);
+    background: #e9ecef;
 }
 
 .council-details summary::-webkit-details-marker {
@@ -187,14 +178,17 @@ li {
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
-    font-size: 1.5em;
-    color: #7f8c8d;
-    transition: transform 0.3s;
+    font-size: 1.3em;
+    color: #1a3a5c;
+    font-weight: normal;
 }
 
 .council-details[open] summary::after {
     content: '−';
-    transform: translateY(-50%);
+}
+
+.council-details[open] summary {
+    border-bottom: 1px solid #ddd;
 }
 
 .council-content {
@@ -203,15 +197,16 @@ li {
 }
 
 .council-content h3 {
-    color: #2c3e50;
+    color: #1a3a5c;
     margin: 20px 0 10px 0;
-    font-size: 1em;
-    border-bottom: 1px solid #ecf0f1;
+    font-size: 0.95em;
+    border-bottom: 1px solid #eee;
     padding-bottom: 5px;
+    font-weight: bold;
 }
 
 .council-list {
-    font-size: 0.85em;
+    font-size: 0.9em;
     color: #555;
     line-height: 1.8;
     margin: 10px 0;
@@ -219,45 +214,53 @@ li {
 
 /* 友情链接样式 */
 .links-box {
-    background: linear-gradient(135deg, #fff8f0 0%, #f0f8ff 100%);
-    border-left: 5px solid #e74c3c;
+    background: white;
+    border: 1px solid #e0e0e0;
+    margin: 20px;
+    padding: 25px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.links-box h2 {
+    color: #1a3a5c;
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.3em;
+    font-weight: normal;
 }
 
 .links-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 10px;
-    margin-top: 15px;
 }
 
 .links-grid a {
     display: block;
     padding: 10px 15px;
-    background: white;
-    color: #2c3e50;
+    background: #f8f9fa;
+    color: #1a3a5c;
     text-decoration: none;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid #e0e0e0;
     transition: all 0.3s;
-    border: 1px solid #ecf0f1;
+    font-size: 0.95em;
 }
 
 .links-grid a:hover {
-    background: #3498db;
+    background: #1a3a5c;
     color: white;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+    border-color: #1a3a5c;
 }
 
 .footer {
     text-align: center;
-    color: rgba(255,255,255,0.8);
-    font-size: 0.9em;
-    margin-top: 40px;
+    color: #666;
+    font-size: 0.85em;
+    margin: 40px 20px 20px 20px;
     padding: 20px;
-    background: rgba(0,0,0,0.2);
-    border-radius: 10px;
+    background: white;
+    border-top: 2px solid #1a3a5c;
 }
 
 /* 响应式设计 */
@@ -265,11 +268,24 @@ li {
     .navbar a {
         float: none;
         width: 100%;
+        border-right: none;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .profile {
+        padding: 40px 20px;
     }
     
     .profile h1 {
-        font-size: 1.8em;
+        font-size: 1.6em;
     }
     
-
+    .section-content {
+        margin: 10px;
+        padding: 20px;
+    }
+    
+    h1 {
+        margin: 30px 10px 15px 10px;
+    }
 }
