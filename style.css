@@ -47,24 +47,22 @@ body {
 }
 
 .profile {
-    background: linear-gradient(135deg, #1a3a5c 0%, #2c5282 100%);
-    padding: 60px 40px;
+    background: none;
+    padding: 0;
     margin-bottom: 0;
     text-align: center;
-    color: white;
-}
-
-.profile h1 {
-    color: white;
-    margin-bottom: 10px;
-    font-size: 2.2em;
-    font-weight: normal;
-    letter-spacing: 2px;
 }
 
 .profile p {
     color: rgba(255,255,255,0.9);
     font-size: 1.1em;
+}
+
+.title-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 h1 {
@@ -273,11 +271,11 @@ li {
     }
     
     .profile {
-        padding: 40px 20px;
+        padding: 0;
     }
     
-    .profile h1 {
-        font-size: 1.6em;
+    .title-img {
+        max-height: 200px;
     }
     
     .section-content {
